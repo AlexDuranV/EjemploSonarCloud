@@ -1,5 +1,3 @@
-import java.awt.*;
-import java.awt.event.*;
 import java.io.*;
 import javax.swing.*;
 public class FileLoader
@@ -16,6 +14,7 @@ public class FileLoader
                 MatrixLoader(x,lineNum);//pass the Matrix loader method the line and the line number for parsing.
                 lineNum++;//we will use the line number later in this class
             }
+            in.close();
          }//end try
         catch (IOException e) 
         {  
